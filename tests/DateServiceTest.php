@@ -53,9 +53,9 @@ class DateServiceTest extends TestCase
 
         $this->assertEquals('2 weeks', $diffOfWeeksOne);
         $this->assertEquals('0 Year', $diffOfWeeksTwo);
-        $this->assertEquals('48 Hours', $diffOfWeeksThree);
-        $this->assertEquals('2880 Minutes', $diffOfWeeksFour);
-        $this->assertEquals('172800 Seconds', $diffOfWeeksFive);
+        $this->assertEquals('336 Hours', $diffOfWeeksThree);
+        $this->assertEquals('20160 Minutes', $diffOfWeeksFour);
+        $this->assertEquals('1209600 Seconds', $diffOfWeeksFive);
     }
 
     public function testTimeZoneCompare()

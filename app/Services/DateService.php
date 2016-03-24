@@ -90,7 +90,7 @@ class DateService
         $diffInWeeks = $dateOne->diffInWeeks($dateTwo);
 
         if ($param != 'n') {
-            return $this->getDateTime($diffInWeeks, $param);
+            return $this->getDateTime($diffInWeeks * 7, $param);
         }
 
         return $diffInWeeks . ' weeks';

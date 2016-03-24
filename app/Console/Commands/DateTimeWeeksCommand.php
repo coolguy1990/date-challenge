@@ -28,7 +28,7 @@ class DateTimeWeeksCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Display an inspiring quote';
+    protected $description = 'Display datetime difference in weeks';
 
     /**
      * DateTimeWeeksCommand constructor.
