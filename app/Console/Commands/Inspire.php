@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
-use App\Services\DateService;
 
 class Inspire extends Command
 {
@@ -23,13 +22,6 @@ class Inspire extends Command
      */
     protected $description = 'Display an inspiring quote';
 
-    public function __construct(DateService $date)
-    {
-        parent::__construct();
-
-        $this->date = $date;
-    }
-
     /**
      * Execute the console command.
      *
@@ -37,16 +29,6 @@ class Inspire extends Command
      */
     public function handle()
     {
-//        $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
-
-        //diff in days
-        dd($this->date->diffOfDays('01-01-2013', '20-03-2016', true, 'Asia/Aden', 'Asia/Ashgabat'));
-
-        //diff in weekdays
-       // dd($this->date->diffOfWeekdays('01-03-2013', '31-03-2016', true));
-
-        //diff in weeks
-       // dd($this->date->diffOfWeeks('01-03-2013', '31-03-2016', true));
-
+        $this->comment(PHP_EOL . Inspiring::quote() . PHP_EOL);
     }
 }

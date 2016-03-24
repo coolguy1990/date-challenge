@@ -13,7 +13,11 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-         Commands\Inspire::class,
+         // Commands\Inspire::class,
+        Commands\DateTimeDaysCommand::class,
+        Commands\DateTimeWeeksCommand::class,
+        Commands\DateTimeWeekDaysCommand::class,
+        Commands\DateTimeTimezoneCommand::class,
     ];
 
     /**
